@@ -1,4 +1,4 @@
-public class Test3 {
+public class Operator {
     public static void main (String[] args) {
 
         int x, y, z;

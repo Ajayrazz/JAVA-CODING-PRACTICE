@@ -1,4 +1,4 @@
-public class Test {
+public class Operator_precedence {
     public static void main (String[] args) {
         int x = 2, y = 5;
         

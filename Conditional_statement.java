@@ -1,4 +1,4 @@
-public class Test2 {
+public class Conditional_statement {
     public static void main (String[] args) {
         int x = 200, y = 50, z = 100;
 
