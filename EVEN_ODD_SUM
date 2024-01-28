@@ -1,0 +1,24 @@
+import java.util.*;
+public class Quest3 {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a set of integer : ");
+        int n = sc.nextInt();
+
+        int evenSum = 0;
+        int oddSum = 0;
+
+        while(n>0){
+            int lastDigit = n%10;
+            if(lastDigit % 2 == 0){
+                evenSum += lastDigit;
+            } else {
+                oddSum += lastDigit;
+            }
+            n = n/10;
+        }
+
+        System.out.println("Even sum : "+evenSum);
+        System.out.println("Odd sum : "+oddSum);
+    }
+}
