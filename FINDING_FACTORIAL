@@ -1,0 +1,16 @@
+import java.util.*;
+public class FINDING_FACTORIAL {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a value : ");
+        int n = sc.nextInt();
+
+        //finding factorial
+        int fact = 1;
+        for(int i=n; i>0; i--){
+            fact *= i;
+        }
+
+        System.out.println("factorial of the given number : "+fact);
+    }
+}
