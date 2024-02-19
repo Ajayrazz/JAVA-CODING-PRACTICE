@@ -5,4 +5,8 @@ public class PrintHello{
             i += 2;
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 29e397ec91a2ac6ea53aa674f790322940b662b3

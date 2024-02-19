@@ -1,0 +1,48 @@
+[33mcommit 279489fa5ba4640901c18f7267d8dfb60102c4b3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: AJAY RAZZ <Ajayrazz854334@gmail.com>
+Date:   Mon Feb 19 14:10:46 2024 +0530
+
+    Practice Question
+
+[33mcommit 94f5ee4bd4cd9965abb112cfc1b73067dde4d2bd[m
+Merge: c0ee3e7 cf79421
+Author: AJAY RAZZ <ajayrazz854334@gmail.com>
+Date:   Wed Jan 3 01:38:49 2024 +0530
+
+    Merge branch 'main' of https://github.com/Ajayrazz/JAVA-CODING-PRACTICE
+
+[33mcommit c0ee3e7dae6877433a9405202fcd133d15d7d3b6[m
+Author: AJAY RAZZ <ajayrazz854334@gmail.com>
+Date:   Tue Jan 2 19:32:19 2024 +0530
+
+    JAVA PROGRAMMING
+
+[33mcommit cf79421e3e7b7769eec8193bb072222c617a0b09[m
+Author: AJAY RAZZ <149960524+Ajayrazz@users.noreply.github.com>
+Date:   Tue Jan 2 19:27:33 2024 +0530
+
+    Update and rename Test4.java to Operator_precedence.java
+
+[33mcommit 466c756f8c26097ea36e7c9b559d0140c1fdd9b8[m
+Author: AJAY RAZZ <149960524+Ajayrazz@users.noreply.github.com>
+Date:   Tue Jan 2 19:26:39 2024 +0530
+
+    Update and rename Test3.java to Assignment.java
+
+[33mcommit d1ce475fbc9116d6727b7192016229cdc873d533[m
+Author: AJAY RAZZ <149960524+Ajayrazz@users.noreply.github.com>
+Date:   Tue Jan 2 19:25:57 2024 +0530
+
+    Update and rename Test2.java to Conditional_statement.java
+
+[33mcommit 76fbac20b19a7b8cd042d34a03132bf6319409ab[m
+Author: AJAY RAZZ <149960524+Ajayrazz@users.noreply.github.com>
+Date:   Tue Jan 2 19:25:04 2024 +0530
+
+    Update and rename Test.java to Operator.java
+
+[33mcommit a8d8857eb17036751e8a5dcb325b26e62ea2dda6[m
+Author: AJAY RAZZ <ajayrazz854334@gmail.com>
+Date:   Tue Jan 2 19:17:50 2024 +0530
+
+    Program to print even or odd in java by taking input from user.

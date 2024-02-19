@@ -1,0 +1,29 @@
+//program that array input from user and performing Linear Search for finding element.
+import java.util.*;
+public class Quest18 {
+    public static int LinearSEARCH(int arr[],int key){
+        for(int i=0; i<arr.length; i++){
+            if(arr[i] == key){
+                return i;
+            }
+        }
+        return -1;
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a value : ");
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for(int i=0; i<n; i++){
+            arr[i] = sc.nextInt();
+        }
+        int key = sc.nextInt();
+
+        int index = LinearSEARCH(arr,key);
+        if(index == -1){
+            System.out.println("Key not found.");
+        } else {
+            System.out.println(key+" for at "+index+"th index.");
+        }
+    }
+}

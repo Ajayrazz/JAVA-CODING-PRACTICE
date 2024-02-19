@@ -7,4 +7,8 @@ public class Area_of_circle {
         int area = (int)(3.14 * rad * rad) ;
         System.out.println("Area of circle : " + area);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 29e397ec91a2ac6ea53aa674f790322940b662b3

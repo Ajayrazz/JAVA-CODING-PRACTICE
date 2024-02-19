@@ -18,4 +18,8 @@ public class ArrayFindIndexUsingLinearSearch{
             System.out.println(key+" is at "+index+" index in the given array.");
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 29e397ec91a2ac6ea53aa674f790322940b662b3
