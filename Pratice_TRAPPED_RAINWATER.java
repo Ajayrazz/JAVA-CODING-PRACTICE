@@ -11,7 +11,7 @@ public class Pratice_TRAPPED_RAINWATER {
         for(int i=1; i<height.length; i++){
             leftmax[i] = Math.max(height[i], leftmax[i-1]);
         }
-
+        
         //RIGHT MAX BOUNDARY
         int rightmax[] = new int[height.length];
         rightmax[height.length-1] = height[height.length-1];

@@ -1,4 +1,6 @@
+//program to check whether the given sudoko is valid or not
 //time complexity 0(n^2)
+
 import java.util.*;
 public class Sudoku_Problem {
     public static boolean isSafe(int sudoku[][], int row, int col, int digit){

@@ -1,42 +1,46 @@
-//program to find the diameter of a bianry tree
-
-public class BinaryTree_Diameter {
+public class Practice__BinaryTree__Finding__Diametert {
     
     static class Node {
         int data;
-        Node left;
-        Node right;
+        Node left ;
+        Node right ;
 
         Node(int data){
             this.data = data;
-            this.left = null;
-            this.right = null;
+            this.left = null ;
+            this.right = null ;
         }
     }
 
+    //Function for finding the height of the binary tree
     public static int height(Node root){
         if(root == null){
             return 0;
         }
+
         int leftheight = height(root.left);
         int rightheight = height(root.right);
 
-        return Math.max(leftheight , rightheight)+1;
+        return Math.max(leftheight , rightheight) + 1;
     }
 
+    //Function for finding the diameter of the binary tree
     public static int diameter(Node root){
         if(root == null){
             return 0;
         }
+
         int leftdiam = diameter(root.left);
         int rightdiam = diameter(root.right);
         int leftht = height(root.left);
         int rightht = height(root.right);
 
-        int selfdiam = leftht + rightht + 1;
+        int selfdiam = (leftht + rightht) + 1 ;
 
         return Math.max(selfdiam , Math.max(leftdiam , rightdiam));
     }
+
+
     public static void main(String args[]){
         Node root = new Node(1);
         root.left = new Node(2);
@@ -45,7 +49,13 @@ public class BinaryTree_Diameter {
         root.left.right = new Node(5);
         root.right.left = new Node(6);
         root.right.right = new Node(7);
+        root.left.left.left = new Node(8);
+        root.left.left.right = new Node(9);
+        root.left.right.left = new Node(10);
+        root.left.right.right = new Node(11);
 
-        System.out.println(diameter(root));
+        System.out.println("Height of the binary tree -> " + height(root));
+
+        System.out.println("Diameter of the binary tree -> " + diameter(root));
     }
 }

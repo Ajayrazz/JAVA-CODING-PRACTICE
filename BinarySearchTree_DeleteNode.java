@@ -1,3 +1,5 @@
+//program to delete node of a binary tree
+
 public class BinarySearchTree_DeleteNode {
     static class Node {
         int data;

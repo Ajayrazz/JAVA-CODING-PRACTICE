@@ -1,3 +1,4 @@
+import java.util.*;
 public class Trie_Word_Break_Problem {
     static class Node {
         Node children[] = new Node[26];

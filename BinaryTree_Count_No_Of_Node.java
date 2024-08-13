@@ -1,3 +1,5 @@
+// program to count the number of node of a binary tree
+
 public class BinaryTree_Count_No_Of_Node {
     
     static class Node {
