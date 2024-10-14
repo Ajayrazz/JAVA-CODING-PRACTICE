@@ -1,0 +1,53 @@
+/*
+// Definition for a Node.
+class Node {
+    public int val;
+    public List<Node> children;
+
+    public Node() {}
+
+    public Node(int _val) {
+        val = _val;
+    }
+
+    public Node(int _val, List<Node> _children) {
+        val = _val;
+        children = _children;
+    }
+};
+*/
+
+class Solution {
+    public List<List<Integer>> levelOrder(Node root) {
+        //create list of list
+        List<List<Integer>> ans = new ArrayList<>();
+        //base case
+        if(root == null){
+            return ans;
+        }
+        //create Queue<Node> to storing element of root
+        Queue<Node> queue = new ArrayDeque<>();
+        queue.add(root);
+
+        //using nested while loop for traversal
+        while(queue.size() != 0){
+            //creta List<Integer>
+            List<Integer> list = new ArrayList<>();
+            int size = queue.size();
+            while(size-- > 0){
+                //removing first element of queue
+                Node rem = queue.poll();
+                //adding element to list
+                list.add(rem.val);
+
+                //iterating children
+                for(int i=0; i<rem.children.size(); i++){
+                    queue.add(rem.children.get(i));
+                }
+            }
+            ans.add(list);
+        }
+
+        return ans;
+    }
+}
