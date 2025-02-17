@@ -46,7 +46,7 @@ public class Graph_Topological_Sorting {
         Stack<Integer> s = new Stack<>();
         for(int i=0; i<graph.length; i++){
             if(!vis[i]){
-                topSortUtil(graph , i , vis , s); //modified dfs
+                topSortUtil(graph , i , vis , s); 
             }
         }
         while(!s.isEmpty()){

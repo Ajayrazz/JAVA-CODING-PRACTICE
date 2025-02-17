@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 
 public class LinkedList_Create {
-    public static class Node {
+    static class Node {
         int data;
         Node next;
 
@@ -43,7 +43,10 @@ public class LinkedList_Create {
         tail = newNode;
     }
 
+
+    //add element at a particular index
     public void add(int idx,int data){
+        //base case
         if(idx == 0){
             addFirst(data);
             return;
@@ -77,7 +80,8 @@ public class LinkedList_Create {
         ll.addFirst(2);
         ll.addLast(4);
         ll.add(2,9);
-        ll.print();
+        System.out.print(ll);
+        System.out.println();
         System.out.println(ll.size());
 
 
