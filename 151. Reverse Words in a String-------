@@ -1,0 +1,28 @@
+class Solution {
+    public String reverseWords(String s) {
+        //use trim() for removing extra space
+        s = s.trim();
+        //creat Stack<String> for storing word
+        Stack<String> stack = new Stack<>();
+        int j = 0;
+        //using for loop for iterating String s
+        for(int i=1; i<s.length(); i++){
+            //base case
+            if(s.charAt(i) == ' ' && s.charAt(i-1) != ' '){
+                stack.push(s.substring(j,i).trim());
+                j = i + 1;
+            }
+        }
+        //append the substring
+        stack.push(s.substring(j));
+
+        //create StringBuilder to store reversed value
+        StringBuilder sb = new StringBuilder();
+
+        while(!stack.isEmpty()) {
+            sb.append(stack.pop()).append(" ");
+        }
+
+        return sb.toString().trim();
+    }
+}
