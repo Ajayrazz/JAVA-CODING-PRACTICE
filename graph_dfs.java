@@ -56,6 +56,27 @@ class graph_dfs {
         return result;
     }
 
+    //depth first search
+    public ArrayList<Integer> dfs(int start){
+        ArrayList<Integer> result = new ArrayList<>();
+        boolean[] visited = new boolean[v];
+        dfsUtil(0, visited, result, adj);
+        return result;
+    }
+
+    //util function for dfs
+    private void dfsUitl(int start, boolean[] visited, ArrayList<Integer> result, ArrayList<ArrayList<Integer>> adj){
+        //visit
+        visited[start] = true;
+        result.add(start);
+
+        for(Integer i  adj.get(start)){
+            if(!visited[i]){
+                dfsUitl(i, visited, result, adj);
+            }
+        }
+    }
+
     public static void main(String[] args){
         graph_dfs graph = new graph_dfs(5);
         graph.addEdge(0, 1);
@@ -63,10 +84,19 @@ class graph_dfs {
         graph.addEdge(1, 3);
         graph.addEdge(1, 4);
 
+        System.out.println("DFS Traversal starting from vertex 0:");
         ArrayList<ArrayList<Integer>> result = graph.dfs(0);
         for(ArrayList<Integer> list : result){
             System.out.println(list);
         }
+
+        System.out.println("BFS Traversal starting from vertex 0:");
+        ArrayList<Integer> bfsResult = graph.bfs(0);
+        for(Integer i : bfsResult){
+            System.out.print(i + " ");
+        }
+
+
         // Output:
     }
 }
